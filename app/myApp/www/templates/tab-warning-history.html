@@ -1,0 +1,29 @@
+<ion-view view-title="历史记录">
+  <ion-content class="default-container">
+    <ion-refresher on-refresh="doRefresh()" pulling-text="下拉刷新">
+    </ion-refresher>
+
+    <div class="row loading-area" ng-hide="warnings">
+      <div class="col">
+        <ion-spinner icon="ripple"></ion-spinner>
+      </div>
+    </div>
+
+    <!-- <div class="spacer"></div>
+    <div class="list warning-list">
+      <div ng-repeat="warning in warnings" class="item warning-list-item">
+        <h2>{{warning.title}}<span>{{warning.additional}}</span></h2>
+        <p>{{warning.date}}</p>
+      </div>
+    </div> -->
+
+    <div>
+      <div ng-repeat="warning in warnings" class="card warning-list-item">
+        <div class="item item-text-warp">
+          <h2>{{warning.title}}{{warning.additional}}</h2>
+          <p>{{warning.date}}</p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,56 @@
+/* Empty. Add your own CSS if you like */
+
+.default-container {
+  background-color: #eeeee;
+  text-align: center;
+}
+.loading-area {
+  margin-top: 50%;
+}
+
+.spacer {margin: 10px;}
+.warning-card {
+ /*background-color: green;*/
+ padding: 40% 10%;
+ text-align: center;
+ clear: both;
+}
+
+.warning-kind {
+  font-size: 800%;
+  line-height: 100%;
+  color: #555555;
+  /*border: 1px solid red;*/
+}
+
+.warning-level {
+  font-size: 146%;
+  line-height: 100%;
+  color: #666666;
+  text-align: center;
+  margin-top: 20px;
+  /*border: 1px solid red;*/
+}
+
+.warning-additional {
+  font-size: 150%;
+  line-height: 100%;
+  display: inline-block;
+  color: #666666;
+  text-align: left;
+  /*border: 1px solid red;*/
+}
+
+.warning-date {
+  font-size: 104%;
+  line-height: 100%;
+  color: #666666;
+  /*border: 1px solid red;*/
+}
+
+.warning-list {
+
+}
+.warning-list-item {
+  text-align: left;
+}

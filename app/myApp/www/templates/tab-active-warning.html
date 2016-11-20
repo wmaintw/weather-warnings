@@ -1,0 +1,32 @@
+<ion-view view-title="当前预警">
+  <ion-content class="default-container">
+
+    <ion-refresher on-refresh="doRefresh()" pulling-text="下拉刷新">
+    </ion-refresher>
+
+    <div class="row loading-area" ng-hide="warnings">
+      <div class="col">
+        <ion-spinner icon="ripple"></ion-spinner>
+      </div>
+    </div>
+
+
+    <div>
+      <div ng-repeat="warning in warnings" class="warning-card">
+        <div class="row">
+          <div class="col padding warning-kind">{{warning.kind}}</div>
+        </div>
+        <div class="row">
+          <div class="col padding warning-level">
+            <span>{{warning.level}}预警</span>
+            <span>&nbsp;{{warning.additional}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col padding warning-date">发布于 {{warning.date}}</div>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,7 @@
+Writing PID to tmp/pids/thin.pid
+Using rack adapter
+Thin web server (v1.7.0 codename Dunder Mifflin)
+Maximum connections set to 1024
+Listening on 0.0.0.0:4567, CTRL+C to stop
+192.168.0.102 - - [20/Nov/2016:20:27:23 +0800] "GET /active-warning HTTP/1.1" 200 167 2.9627
+Waiting for 3 connection(s) to finish, can take up to 30 sec, CTRL+C to stop now
